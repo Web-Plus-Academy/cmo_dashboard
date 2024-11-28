@@ -62,7 +62,6 @@ const App = () => {
               <Routes>
                 <Route path="/" element={<Navigate to="/dashboard" />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                {/* <Route path="/tasks" element={<TaskSubmit />} /> */}
               </Routes>
             </div>
           </div>
