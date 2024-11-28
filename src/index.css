@@ -19,9 +19,6 @@ hr{
     height: 100vh;
 }
   
-
-
-
 /* Layout container */
 .app-container {
     display: flex;
@@ -29,8 +26,6 @@ hr{
     overflow: hidden;
   }
   
-
-
 /* Main content area */
 .main-content {
     margin-left: 250px; 
