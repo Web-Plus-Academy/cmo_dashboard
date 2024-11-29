@@ -1,0 +1,114 @@
+/* Container styling */
+.project-list-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Project list header */
+  .project-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Project list styling */
+  .project-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    margin: 0 0 10px 0;
+    color: #007bff;
+  }
+  
+  .project-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .project-card a {
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styling */
+  .mark-complete-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .mark-complete-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Completion form styling */
+  .completion-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .completion-link-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .project-list-container {
+      padding: 10px;
+    }
+  
+    .project-card {
+      padding: 10px;
+    }
+  
+    .mark-complete-button,
+    .submit-button {
+      padding: 8px;
+    }
+  
+    .completion-link-input {
+      padding: 8px;
+    }
+  }
+  
