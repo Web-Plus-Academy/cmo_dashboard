@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
@@ -23,6 +23,29 @@ const Sidebar = ({ adminDetails }) => {
                 <br />
                 <hr />
 
+                <button className="sidebar-container-button">
+                    <NavLink className="sidebar-container-link" to="/addproject">
+                        Add Project
+                    </NavLink>
+                </button>
+
+                <br />
+                <hr />
+
+                <button className="sidebar-container-button">
+                    <NavLink className="sidebar-container-link" to="/projectlist">
+                     Project List
+                    </NavLink>
+                </button>
+
+                <br />
+                <hr />
+
+                <button className="sidebar-container-button">
+                    <NavLink className="sidebar-container-link" to="/history">
+                     History
+                    </NavLink>
+                </button>
             </div>
         </div>
     );

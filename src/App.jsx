@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,6 +9,9 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import Login from './Components/Login/Login';
 // import TaskSubmit from './Components/TaskSubmit/TaskSubmit';
 import axios from './axiosConfig';
+import AddProject from './Components/AddProject/AddProject'
+import ProjectList from './Components/ProjectList/ProjectList';
+import History from './Components/History/History'
 
 
 const App = () => {
@@ -63,6 +66,9 @@ const App = () => {
                 <Route path="/" element={<Navigate to="/dashboard" />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 {/* <Route path="/tasks" element={<TaskSubmit />} /> */}
+                <Route path='/addproject' element={<AddProject/>}/>
+                <Route path='/projectlist' element={<ProjectList/>}/>
+                <Route path='/history' element={<History/>}/>
               </Routes>
             </div>
           </div>
