@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../../axiosConfig.js';
 import Swal from 'sweetalert2'; // Import SweetAlert
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './projectlist.css'; // Import the external CSS file
@@ -14,7 +14,7 @@ const ProjectList = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/projects/projects');
+        const response = await axios.get('/projects/projects');
         // Filter only incomplete projects
         const incompleteProjects = response.data.projects.filter(
           (project) => !project.completed
@@ -49,7 +49,7 @@ const ProjectList = () => {
 
     try {
       const response = await axios.put(
-        `http://localhost:5000/projects/projects/${selectedProjectId}/complete`,
+        `/projects/projects/${selectedProjectId}/complete`,
         { completionLink }
       );
 

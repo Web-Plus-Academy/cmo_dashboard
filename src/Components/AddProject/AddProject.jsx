@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios from 'axios';
+import axios from '../../axiosConfig.js';
 import Swal from 'sweetalert2';
 import './addproject.css'; // Import the external CSS file
 
@@ -25,7 +25,7 @@ const CreateProjectForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/projects/addproject', formData, {
+      const response = await axios.post('/projects/addproject', formData, {
         headers: {
           'Content-Type': 'application/json',
         },

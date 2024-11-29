@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from '../../axiosConfig.js';
 import Swal from 'sweetalert2';
 import './history.css'; // Import external CSS
 
@@ -10,7 +10,7 @@ const History = () => {
   useEffect(() => {
     const fetchCompletedProjects = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/projects/projects/completed');
+        const response = await axios.get('/projects/projects/completed');
         // Safeguard to ensure response format
         const projects = response.data?.projects || [];
         setCompletedProjects(projects);
