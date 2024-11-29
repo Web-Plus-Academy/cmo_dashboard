@@ -100,7 +100,7 @@ const CreateProjectForm = () => {
           />
         </div>
         <button type="submit" className="submit-button">
-          Create Project
+          Create NEW Project
         </button>
       </form>
     </div>
